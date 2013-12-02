@@ -14,4 +14,9 @@ if (Posts.find().count() === 0) {
     author: 'Tom Coleman',
     url: 'http://themeteorbook.com'
   });
+  Posts.insert({
+    title: 'The Red and The Black',
+    author: 'Stendhal',
+    url: 'http://gutenberg.net.au/ebooks03/0300261.txt'
+  })
 }
