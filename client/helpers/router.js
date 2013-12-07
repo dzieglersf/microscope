@@ -4,5 +4,10 @@ Meteor.Router.add({
   '/posts/:_id': {
     to: 'postPage',
     and: function (id) { Session.set('currentPostId', id); }
+  },
+
+  '/comments/:_id': {
+    to: 'postPage',
+    and: function (id) { Session.set('currentPostId', id); }
   }
 });
